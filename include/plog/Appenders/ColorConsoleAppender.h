@@ -1,6 +1,8 @@
 #pragma once
-#include <plog/Appenders/ConsoleAppender.h>
-#include <plog/WinApi.h>
+#include "../../plog/Appenders/ConsoleAppender.h"
+#include "../../plog/WinApi.h"
+
+#undef _WIN32
 
 namespace plog
 {
@@ -27,7 +29,12 @@ namespace plog
 #else
         ColorConsoleAppender(OutputStream outStream = streamStdOut)
             : ConsoleAppender<Formatter>(outStream)
-        {}
+        {
+            HANDLE hOut = GetStdHandle(STD_OUTPUT_HANDLE);
+            DWORD dwMode = 0;
+            GetConsoleMode(hOut, &dwMode);
+            SetConsoleMode(hOut, dwMode | ENABLE_VIRTUAL_TERMINAL_PROCESSING);
+        }
 #endif
 
         virtual void write(const Record& record) PLOG_OVERRIDE
@@ -106,3 +113,5 @@ namespace plog
 #endif
     };
 }
+
+#define _WIN32

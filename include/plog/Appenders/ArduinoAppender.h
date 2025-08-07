@@ -1,5 +1,5 @@
 #pragma once
-#include <plog/Appenders/IAppender.h>
+#include "../../plog/Appenders/IAppender.h"
 #include <Arduino.h>
 
 namespace plog

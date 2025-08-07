@@ -4,7 +4,7 @@
 //  License: MIT, https://choosealicense.com/licenses/mit
 
 #pragma once
-#include <plog/Logger.h>
+#include "../plog/Logger.h"
 
 //////////////////////////////////////////////////////////////////////////
 // Helper macros that get context info
@@ -128,7 +128,7 @@
 #define PLOGN_IF_(instanceId, condition)         PLOG_NONE_IF_(instanceId, condition)
 
 // Old macro names for downward compatibility. To bypass including these macro names, add
-// #define PLOG_OMIT_LOG_DEFINES before #include <plog/Log.h>
+// #define PLOG_OMIT_LOG_DEFINES before #include "../../plog/Log.h>
 #ifndef PLOG_OMIT_LOG_DEFINES
 
 //////////////////////////////////////////////////////////////////////////

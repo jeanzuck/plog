@@ -1,6 +1,6 @@
 #pragma once
-#include <plog/Appenders/ColorConsoleAppender.h>
-#include <plog/Init.h>
+#include "../../plog/Appenders/ColorConsoleAppender.h"
+#include "../../plog/Init.h"
 
 namespace plog
 {

@@ -1,5 +1,5 @@
 #pragma once
-#include <plog/Logger.h>
+#include "../plog/Logger.h"
 
 namespace plog
 {

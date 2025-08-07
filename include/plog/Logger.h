@@ -1,6 +1,6 @@
 #pragma once
-#include <plog/Appenders/IAppender.h>
-#include <plog/Util.h>
+#include "../plog/Appenders/IAppender.h"
+#include "../plog/Util.h"
 #include <vector>
 
 #ifdef PLOG_DEFAULT_INSTANCE // for backward compatibility

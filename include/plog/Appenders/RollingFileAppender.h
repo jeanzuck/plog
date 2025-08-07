@@ -1,8 +1,8 @@
 #pragma once
-#include <plog/Appenders/IAppender.h>
-#include <plog/Converters/UTF8Converter.h>
-#include <plog/Converters/NativeEOLConverter.h>
-#include <plog/Util.h>
+#include "../../plog/Appenders/IAppender.h"
+#include "../../plog/Converters/UTF8Converter.h"
+#include "../../plog/Converters/NativeEOLConverter.h"
+#include "../../plog/Util.h"
 #include <algorithm>
 
 namespace plog

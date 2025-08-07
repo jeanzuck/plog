@@ -1,6 +1,6 @@
 #pragma once
-#include <plog/Converters/UTF8Converter.h>
-#include <plog/Util.h>
+#include "../../plog/Converters/UTF8Converter.h"
+#include "../../plog/Util.h"
 
 namespace plog
 {

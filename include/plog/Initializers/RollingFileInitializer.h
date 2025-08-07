@@ -1,8 +1,8 @@
 #pragma once
-#include <plog/Appenders/RollingFileAppender.h>
-#include <plog/Formatters/TxtFormatter.h>
-#include <plog/Formatters/CsvFormatter.h>
-#include <plog/Init.h>
+#include "../../plog/Appenders/RollingFileAppender.h"
+#include "../../plog/Formatters/TxtFormatter.h"
+#include "../../plog/Formatters/CsvFormatter.h"
+#include "../../plog/Init.h"
 #include <cstring>
 
 namespace plog
